@@ -1,2 +1,8 @@
-# how-to-use-flexbox
-Différents tests de flex box (CSS3) avec bootstrap
+# Comment utiliser flexbox avec bootstrap
+
+Différents tests de flexbox (CSS3) avec bootstrap
+
+## Descritptif
+- display: flex
+- flex-direction
+- flex-wrap

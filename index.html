@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Flexbox - Test avec Bootstrap">
+        <meta name="keywords" content="Javascript, HTML5, Bootstrap">
+        <meta name="author" content="Christophe Malo">
+            
+        <title>Flexbox - Test</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"  href="css/style.css" media="all">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div  class="container">
+            <div class="row">
+                <h1>Flexbox - Test avec Bootstrap</h1>
+                
+                <!-- Sans flex -->
+                <div class="col-xs-12">
+                    <h2>Sans flex</h2>
+                    <div id="conteneur1" class="conteneur">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                <!-- Flex -->
+                <div class="col-xs-12">
+                    <h2>Avec flex</h2>
+                    <pre>#conteneur2 { display: flex; }</pre>
+                    <div id="conteneur2" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                <!-- Flex direction -->
+                <div class="col-xs-12">
+                    <h2>flex direction</h2>
+<pre>
+#conteneur3 {
+    display: flex;
+    flex-direction: row;
+}
+</pre>
+                    <div id="conteneur3" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                    
+                    
+                    
+<pre>
+#conteneur4 { 
+    display: flex;
+    flex-direction: column;
+}
+</pre>
+                    <div id="conteneur4" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+ 
+
+                    
+<pre>
+#conteneur5 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+</pre>
+                    <div id="conteneur5" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+
+
+                    
+<pre>
+#conteneur6 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+</pre>
+                    <div id="conteneur6" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                <!-- Retour à la ligne -->
+                <div class="col-xs-12">
+                    <h2>flex retour à la ligne</h2>
+                    <p>Réduire la fenêtre du navigateur pour tester les effets</p>
+<pre>
+#conteneur7 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+</pre>
+                    <div id="conteneur7" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+                    <pre>
+#conteneur8 {
+    display: flex;
+    flex-wrap: wrap;
+}
+</pre>
+                    <div id="conteneur8" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur9 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+</pre>
+                    <div id="conteneur9" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+            </div> <!-- Fin row -->
+        </div> <!-- Fin container -->
+        
+    </body>
+</html>
