@@ -24,13 +24,27 @@
     <body>
         <div  class="container">
             <div class="row">
-                <h1>Flexbox - Tests avec Bootstrap</h1>
-                <p>Cette page montre quelques exemples d'utilisation de flexbox (CSS3) avec bootstrap</p>
-                <p>Flex est une nouveauté CSS3 qui facilite la mise en page web</p>
+                <h1>Flexbox - Tests avec Bootstrap 3.3.6</h1>
+                <p>Cette page montre quelques exemples d'utilisation de flexbox (CSS3) avec bootstrap 3.3.6.</p>
+                <p>Bootstrap est utilisé ici pour une mise en forme rapide. Le système de grille de boostrap n'est pas utilisé.</p>
+                <p>Flexbox (Flexible Box) est une nouveauté CSS3 qui facilite la mise en page web.</p>
+                <p>Bien sur Flexbox peut-être utilisé sans bootstrap.</p>
+                <p>Bootstrap 4 intègre Flexbox à son système de grille.</p>
+                <p>Inspiré par <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox">le cours Openclassrooms</a> - Adaptation : Christophe Malo</p>
                 
-                <!-- Sans flex -->
+                <h3>Quelques liens traitant de Flexbox</h3>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/css-flexbox-1/">W3C (en anglais)</a></li>
+                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Utilisation_des_flexbox_en_CSS">Mozilla MDN (en français)</a></li>
+                    <li><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox">Openclassrooms (en français)</a></li>
+                    <li><a href="http://www.w3schools.com/css/css3_flexbox.asp">W3Schools (en anglais)</a></li>
+                </ul>
+                
+                
+                
+                <!-- Sans Flexbox -->
                 <div class="col-xs-12">
-                    <h2>Sans flex</h2>
+                    <h2>Sans Flexbox</h2>
                     <div id="conteneur1" class="conteneur">
                         <div class="element1 element">Élément 1</div>
                         <div class="element2 element">Élément 2</div>
@@ -39,9 +53,10 @@
                 </div>
                 
                 
-                <!-- Flex -->
+                
+                <!-- Flexbox -->
                 <div class="col-xs-12">
-                    <h2>Avec flex</h2>
+                    <h2>Avec Flexbox</h2>
                     <pre>#conteneur2 { display: flex; }</pre>
                     <div id="conteneur2" class="conteneur conteneur-display">
                         <div class="element1 element">Élément 1</div>
@@ -51,9 +66,10 @@
                 </div>
                 
                 
-                <!-- Flex direction -->
+                
+                <!-- Flexbox direction -->
                 <div class="col-xs-12">
-                    <h2>flex direction</h2>
+                    <h2>Flexbox - direction</h2>
 <pre>
 #conteneur3 {
     display: flex;
@@ -110,9 +126,10 @@
                 </div>
                 
                 
+                
                 <!-- Retour à la ligne -->
                 <div class="col-xs-12">
-                    <h2>flex retour à la ligne</h2>
+                    <h2>Flexbox - retour à la ligne</h2>
                     <p>Réduire la fenêtre du navigateur pour tester les effets</p>
 <pre>
 #conteneur7 {
@@ -154,6 +171,468 @@
                 </div>
                 
                 
+                
+                <!-- Alignement horizontal -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - alignement horizontal</h2>
+<pre>
+#conteneur10 {
+    display: flex;
+    justify-content: flex-start;
+}
+</pre>
+                    <div id="conteneur10" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur11 {
+    display: flex;
+    justify-content: flex-end;
+}
+</pre>
+                    <div id="conteneur11" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur12 {
+    display: flex;
+    justify-content: center;
+}
+</pre>
+                    <div id="conteneur12" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur13 {
+    display: flex;
+    justify-content: space-around;
+}
+</pre>
+                    <div id="conteneur13" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur14 {
+    display: flex;
+    justify-content: space-between;
+}
+</pre>
+                    <div id="conteneur14" class="conteneur conteneur-display">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Alignement vertical -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - alignement vertical</h2>
+<pre>
+#conteneur15 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+</pre>
+                    <div id="conteneur15" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur16 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+</pre>
+                    <div id="conteneur16" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur17 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+</pre>
+                    <div id="conteneur17" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+</pre>
+                    <div id="conteneur18" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur19 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+</pre>
+                    <div id="conteneur19" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementSpecialWidth">Élément 1</div>
+                        <div class="element2 elementSpecialWidth">Élément 2</div>
+                        <div class="element3 elementSpecialWidth">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Alignement horizontal - sur axe secondaire (vertical) -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - alignement horizontal - sur axe secondaire (vertical)</h2>
+<pre>
+#conteneur20 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+</pre>
+                    <div id="conteneur20" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementForAlignItems">Élément 1</div>
+                        <div class="element2 elementForAlignItems">Élément 2</div>
+                        <div class="element3 elementForAlignItems">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur21 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+</pre>
+                    <div id="conteneur21" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementForAlignItems">Élément 1</div>
+                        <div class="element2 elementForAlignItems">Élément 2</div>
+                        <div class="element3 elementForAlignItems">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur22 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+</pre>
+                    <div id="conteneur22" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementForAlignItems">Élément 1</div>
+                        <div class="element2 elementForAlignItems">Élément 2</div>
+                        <div class="element3 elementForAlignItems">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</pre>
+                    <div id="conteneur23" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementForAlignItems">Élément 1</div>
+                        <div class="element2 elementForAlignItems">Élément 2</div>
+                        <div class="element3 elementForAlignItems">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur24 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+</pre>
+                    <div id="conteneur24" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 elementForAlignItems">Élément 1</div>
+                        <div class="element2 elementForAlignItems">Élément 2</div>
+                        <div class="element3 elementForAlignItems">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Alignement vertical - sur axe secondaire (horizontal) -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - alignement vertical - sur axe secondaire (horizontale)</h2>
+<pre>
+#conteneur25 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+</pre>
+                    <div id="conteneur25" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1">Élément 1</div>
+                        <div class="element2">Élément 2</div>
+                        <div class="element3">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur26 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+</pre>
+                    <div id="conteneur26" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1">Élément 1</div>
+                        <div class="element2">Élément 2</div>
+                        <div class="element3">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur27 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+</pre>
+                    <div id="conteneur27" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1">Élément 1</div>
+                        <div class="element2">Élément 2</div>
+                        <div class="element3">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur28 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+</pre>
+                    <div id="conteneur28" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1">Élément 1</div>
+                        <div class="element2">Élément 2</div>
+                        <div class="element3">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur29 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+</pre>
+                    <div id="conteneur29" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1">Élément 1</div>
+                        <div class="element2">Élément 2</div>
+                        <div class="element3">Élément 3</div>
+                    </div>
+                </div>
+            
+            
+            
+                <!-- Centrage vertical horizontal - Méthode simple -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - Centrage vertical horizontal - Méthode simple</h2>
+<pre>
+#conteneur30 {
+    display: flex;
+}
+.class_for_element_inside_conteneur {
+    margin: auto;
+}
+</pre>
+                    <div id="conteneur30" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 element elementForCenter">Élément 1</div>
+                        <div class="element2 element elementForCenter">Élément 2</div>
+                        <div class="element3 element elementForCenter">Élément 3</div>
+                    </div>
+                </div>
+                    
+                
+                
+                <!-- Aligner un seul élément -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - Aligner un seul élément</h2>
+                    <p>ici, celui du milieu, aligner en haut</p>
+<pre>
+#conteneur31 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.class_for_element_to_be_align {
+    align-self: flex-end;
+}
+</pre>
+                    <div id="conteneur31" class="conteneur conteneur-display heightForAlignV">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element elementToBeAlign">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Ordonner les éléments -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - Ordonner les éléments</h2>
+<pre>
+#conteneur32 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.element1 {
+    order: 2;
+}
+.element2 {
+    order: 3;
+}
+.element3 {
+    order1;
+}
+</pre>
+                    <div id="conteneur32" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Taille différente aux éléments -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - Taille différente aux éléments</h2>
+<pre>
+#conteneur33 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.element2 {
+    flex: 1;
+}
+</pre>
+                    <div id="conteneur33" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                    
+                    
+<pre>
+#conteneur34 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.element1 {
+    flex: 2;
+}
+.element2 {
+    flex: 1;
+}
+</pre>
+                    <div id="conteneur34" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Répartition de plusieurs lignes -->
+                <div class="col-xs-12">
+                    <h2>Flexbox - Répartition de plusieurs lignes</h2>
+                    <p>options possibles à align-content :</p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>stretch (par défaut)</li>
+                    </ul>
+<pre>
+#conteneur35 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    align-content: space-between;
+}
+</pre>
+                    <div id="conteneur35" class="conteneur conteneur-display">
+                        <div class="element1 element">Élément 1</div>
+                        <div class="element2 element">Élément 2</div>
+                        <div class="element3 element">Élément 3</div>
+                        <div class="element1 element">Élément 4</div>
+                        <div class="element2 element">Élément 5</div>
+                        <div class="element3 element">Élément 6</div>
+                        <div class="element1 element">Élément 7</div>
+                        <div class="element2 element">Élément 8</div>
+                        <div class="element3 element">Élément 9</div>
+                        <div class="element1 element">Élément 10</div>
+                        <div class="element2 element">Élément 11</div>
+                        <div class="element3 element">Élément 12</div>
+                        <div class="element1 element">Élément 13</div>
+                        <div class="element2 element">Élément 14</div>
+                        <div class="element3 element">Élément 15</div>
+                        <div class="element1 element">Élément 16</div>
+                        <div class="element2 element">Élément 17</div>
+                        <div class="element3 element">Élément 18</div>
+                        <div class="element3 element">Élément 19</div>
+                        <div class="element3 element">Élément 20</div>
+                    </div>
+
+                </div>
             </div> <!-- Fin row -->
         </div> <!-- Fin container -->
         

@@ -54,10 +54,14 @@ footer {
     height: 60px;
     line-height: 60px;
 }
+.elementForAlignItems { /* Pas de hauteur fixe */
+    text-align: center;
+}
 .element {
     width: 20%;
 }
-.elementSpecialWidth {
+.elementSpecialWidth,
+.elementForAlignItems {
     width: 200px;
 }
 .element1 {
@@ -79,6 +83,8 @@ footer {
 .conteneur-display {
     display: flex;
 }
+
+/* Flexbox direction*/
 #conteneur3 {
     flex-direction: row;
 }
@@ -91,6 +97,8 @@ footer {
 #conteneur6 {
     flex-direction: column-reverse;
 }
+
+/* Retour à la ligne */
 #conteneur7 {
     flex-wrap: nowrap;
 }
@@ -99,4 +107,161 @@ footer {
 }
 #conteneur9 {
     flex-wrap: wrap-reverse;
+}
+
+/* Alignement horizontal */
+#conteneur10 {
+    justify-content: flex-start;
+}
+#conteneur11 {
+    justify-content: flex-end;
+}
+#conteneur12 {
+    justify-content: center;
+}
+#conteneur13 {
+    justify-content: space-around;
+}
+#conteneur14 {
+    justify-content: space-between;
+}
+
+/* Alignement vertical */
+#conteneur15,
+#conteneur16,
+#conteneur17,
+#conteneur18,
+#conteneur19 {
+    flex-direction: column;
+}
+.heightForAlignV {
+    height: 300px;
+}
+#conteneur15 {
+    justify-content: flex-start;
+}
+#conteneur16 {
+    justify-content: flex-end;
+}
+#conteneur17 {
+    justify-content: center;
+}
+#conteneur18 {
+    justify-content: space-around;
+}
+#conteneur19 {
+    justify-content: space-between;
+}
+
+/* Alignement horizontal - sur axe secondaire (vertical) */
+#conteneur20,
+#conteneur21,
+#conteneur22,
+#conteneur23,
+#conteneur24 {
+    justify-content: center;
+}
+#conteneur20 {
+    align-items: stretch;
+}
+#conteneur21 {
+    align-items: flex-start;
+}
+#conteneur22 {
+    align-items: flex-end;
+}
+#conteneur23 {
+    align-items: center;
+}
+#conteneur24 {
+    align-items: baseline;
+}
+
+/* Alignement vertical - sur axe secondaire (horizontal) */
+#conteneur25,
+#conteneur26,
+#conteneur27,
+#conteneur28,
+#conteneur29 {
+    flex-direction: column;
+    justify-content: center;
+}
+#conteneur25 {
+    align-items: stretch;
+}
+#conteneur26 {
+    align-items: flex-start;
+}
+#conteneur27 {
+    align-items: flex-end;
+}
+#conteneur28 {
+    align-items: center;
+}
+#conteneur29 {
+    align-items: baseline;
+}
+
+/* Centrage vertical horizontal - Méthode simple */
+/* #Conteneur30 */
+.elementForCenter {
+    margin: auto;
+}
+
+
+/* Aligner un seul élément */
+#conteneur31 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.elementToBeAlign {
+    align-self: flex-start; /* Bloc aligné en haut */
+}
+
+
+/* Ordonner les éléments */
+#conteneur32 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#conteneur32 .element1 {
+    order: 2;
+}
+#conteneur32 .element2 {
+    order: 3;
+}
+#conteneur32 .element3 {
+    order: 1;
+}
+
+
+/* Taille différente aux éléments */
+#conteneur33,
+#conteneur34 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#conteneur33 .element2 {
+    flex: 1;
+}
+#conteneur34 .element1 {
+    flex: 2;
+}
+#conteneur34 .element2 {
+    flex: 1;
+}
+
+
+/* Répartion de plusieurs lignes */
+#conteneur35 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    align-content: space-between;
 }
